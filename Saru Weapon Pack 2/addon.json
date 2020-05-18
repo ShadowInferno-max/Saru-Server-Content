@@ -1,0 +1,11 @@
+{
+	"title"		:	"Saru Server Weapons",
+	"type"		:	"ServerContent",
+	"tags"		:	[ "weapon", "fun" ],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
