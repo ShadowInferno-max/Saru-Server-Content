@@ -31,7 +31,7 @@ SWEP.Base 				= "tfa_scoped_base"
 SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
-SWEP.TracerName = "explosion_shockcore"
+SWEP.TracerName = "hit_hunter"
 SWEP.TracerCount = 1
 SWEP.DamageType = 67108865
 

@@ -1,7 +1,7 @@
 SWEP.Primary.SpreadMultiplierMax = 4
-SWEP.Primary.SpreadIncrement = 0.4
-SWEP.Primary.SpreadRecovery = 2.50
-SWEP.AllowSprintAttack = true
+SWEP.Primary.SpreadIncrement = 0.650
+SWEP.Primary.SpreadRecovery = 4.80
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
@@ -32,14 +32,14 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_M4A1.1")		-- Script that calls the primary fire sound
-SWEP.Primary.SilencedSound = Sound("Weapon_M4A1.2")
-SWEP.Primary.RPM			= 545			-- This is in Rounds Per Minute
+SWEP.Primary.Sound			= Sound("Weapon_M4A1.Single")		-- Script that calls the primary fire sound
+SWEP.Primary.SilencedSound = Sound("Weapon_M4A1.Silenced")
+SWEP.Primary.RPM			= 635			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 30		-- Size of a clip
 SWEP.Primary.DefaultClip		= 90		-- Bullets you start with
-SWEP.Primary.KickUp				= 0.85		-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 0.1		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal		= 0.1		-- Maximum up recoil (stock)
+SWEP.Primary.KickUp				= 0.450		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.2		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= true		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "ar2"
 
@@ -49,9 +49,9 @@ SWEP.data 				= {}				--The starting firemode
 SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
-SWEP.Primary.Damage		= 24.5	-- Base damage per bullet
-SWEP.Primary.Spread		= .02	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
-SWEP.Primary.IronAccuracy = .01 -- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Damage		= 27.5	-- Base damage per bullet
+SWEP.Primary.Spread		= .016	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
+SWEP.Primary.IronAccuracy = .012 -- Ironsight accuracy, should be the same for shotguns
 
 SWEP.CanBeSilenced		= true
 SWEP.SelectiveFire		= true
@@ -59,10 +59,9 @@ SWEP.SelectiveFire		= true
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-7.875, -1.772, 0.159)
 SWEP.IronSightsAng = Vector(3.144, -1.412, -3.07)
-SWEP.SightsPos = Vector(-7.875, -1.772, 0.159)
-SWEP.SightsAng = Vector(3.144, -1.412, -3.07)
-SWEP.RunSightsPos = Vector(8.145, -8.968, -1.969)
-SWEP.RunSightsAng = Vector(-1.667, 66.777, 0)
+SWEP.RunSightsPos = Vector(4.019, -12.865, -2.412)
+SWEP.RunSightsAng = Vector(0, 70, 0)
+
 
 SWEP.VElements = {
 	["Quad"] = { type = "Quad", bone = "v_weapon.m4_Parent", rel = "", pos = Vector(0.518, -6.753, 2.596), angle = Angle(0, -5.844, 0), size = 0.07, draw_func = nil}

@@ -1,7 +1,7 @@
 SWEP.Primary.SpreadMultiplierMax = 1
 SWEP.Primary.SpreadIncrement = 0
 SWEP.Primary.SpreadRecovery = 1
-SWEP.AllowSprintAttack = true
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
@@ -21,7 +21,7 @@ SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.HoldType 				= "shotgun"
 
-SWEP.ViewModelFOV			= 55
+SWEP.ViewModelFOV			= 70
 SWEP.ViewModelFlip			= false
 SWEP.ViewModel				= "models/weapons/cstrike/c_shot_m3super90.mdl"	-- models/weapons/cstrike/c_shot_m3super90.mdl
 SWEP.WorldModel				= "models/weapons/w_shot_m3super90.mdl"	-- Weapon world model
@@ -30,7 +30,7 @@ SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 
-SWEP.Primary.Sound			= Sound("Weapon_M3.1")		-- script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_M3.Single")		-- Weapon_M3.Single
 SWEP.Primary.RPM				= 68		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 6			-- Size of a clip
 SWEP.Primary.DefaultClip			= 18	-- Default number of bullets in a clip
@@ -42,7 +42,7 @@ SWEP.Primary.Ammo			= "buckshot"
 
 SWEP.Secondary.IronFOV			= 60		-- How much you 'zoom' in. Less is more! 
 SWEP.data 				= {}				--The starting firemode
-SWEP.data.ironsights			= 0
+SWEP.data.ironsights			= 1
 SWEP.ShellTime			= .45
 
 SWEP.Primary.NumShots	= 8		-- How many bullets to shoot per trigger pull, AKA pellets
@@ -54,10 +54,8 @@ SWEP.Primary.IronAccuracy = .035	-- Ironsight accuracy, should be the same for s
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-7.64, -3.225, 3.48)
 SWEP.IronSightsAng = Vector(0.13, 0.089, 0)
-SWEP.SightsPos = Vector(-7.64, -3.225, 3.48)
-SWEP.SightsAng = Vector(0.13, 0.089, 0)
-SWEP.RunSightsPos = Vector(9.843, -16.458, 0)
-SWEP.RunSightsAng = Vector(-5.371, 70, 0)
+SWEP.RunSightsPos = Vector(2.009, -19.9, -2.211)
+SWEP.RunSightsAng = Vector(11.96, 70, 0)
 
 SWEP.IronSightTime = 0.325
 

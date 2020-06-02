@@ -1,15 +1,15 @@
 SWEP.Primary.SpreadMultiplierMax = 1
 SWEP.Primary.SpreadIncrement = 0
 SWEP.Primary.SpreadRecovery = 1
-SWEP.AllowSprintAttack = true
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 1"
 SWEP.Author				= "Shadow"
 SWEP.Contact				= ""
 SWEP.Purpose				= ""
-SWEP.Instructions				= "Esta Hecha Mierda"
+SWEP.Instructions				= ""
 SWEP.MuzzleAttachment			= "1" 	-- Should be "1" for CSS models or "muzzle" for hl2 models
-SWEP.PrintName				= "Escopeta De Chapa"		-- Weapon name (Shown on HUD)	
+SWEP.PrintName				= "Chipper-Shotgun"		-- Weapon name (Shown on HUD)	
 SWEP.Slot				= 3				-- Slot in the weapon selection menu
 SWEP.SlotPos				= 60		-- Position in the slot
 SWEP.DrawAmmo				= true		-- Should draw the default HL2 ammo counter
@@ -58,8 +58,8 @@ SWEP.WElements = {
 		["barrel+"] = { type = "Model", model = "models/props_docks/dock03_pole01a_256.mdl", bone = "v_weapon.M3_PARENT", rel = "", pos = Vector(0, -4.5, -9.87), angle = Angle(0, 0, 180), size = Vector(0.059, 0.059, 0.1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 	}
 		
-SWEP.Primary.Sound			= Sound("Weapon_M3.1")		-- script that calls the primary fire sound
-SWEP.Primary.RPM				= 68		-- This is in Rounds Per Minute
+SWEP.Primary.Sound			= Sound("Weapon_Shotgun.Single")		-- script that calls the primary fire sound
+SWEP.Primary.RPM				= 60		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 6			-- Size of a clip
 SWEP.Primary.DefaultClip			= 18	-- Default number of bullets in a clip
 SWEP.Primary.KickUp			= 2.6				-- Maximum up recoil (rise)

@@ -31,7 +31,7 @@ SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 
-SWEP.Primary.Sound			= Sound("Weapon_M3.1")		-- script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_M3.Single")		-- script that calls the primary fire sound
 SWEP.Primary.RPM				= 66		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 6		-- Size of a clip
 SWEP.Primary.DefaultClip			= 18	-- Default number of bullets in a clip

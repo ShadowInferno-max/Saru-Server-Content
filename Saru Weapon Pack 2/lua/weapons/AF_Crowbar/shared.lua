@@ -9,22 +9,22 @@ SWEP.UseHands = true
 
 sound.Add(
 {
-	name = "Weapon_Crowbar.HitWorld",
+	name = "Weapon_Crowbar_HardSwing",
 	channel = CHAN_WEAPON,
 	volume = 1.0,
 	soundlevel = 100,
-	pitch = {58},
-	sound = "Weapon_Crowbar.Melee_HitWorld"
+	pitch = {65,70},
+	sound = "weapons/iceaxe/iceaxe_swing1.wav"
 })
 
 sound.Add(
 {
-	name = "Weapon_Crowbar_HardSwing.wav",
+	name = "Weapon_Crowbar.HitWorld",
 	channel = CHAN_WEAPON,
 	volume = 1.0,
 	soundlevel = 100,
-	pitch = {26},
-	sound = "Weapon_Crowbar.Single"
+	pitch = {57},
+	sound = "weapons/crowbar/crowbar_impact2.wav"
 })
 
 SWEP.Purpose = ""
@@ -50,43 +50,48 @@ SWEP.Primary.ClipSize			= -1
 SWEP.Primary.DefaultClip		= -1
 SWEP.Primary.Automatic   		= true
 SWEP.Primary.Ammo         		= "none"
+SWEP.AllowSprintAttack = false
+SWEP.DisableChambering = true
 
 SWEP.Primary.Attacks = {
 	{
 		['act'] = ACT_VM_MISSCENTER, -- Animation; ACT_VM_THINGY, ideally something unique per-sequence
-		['len'] = 160, -- Trace source; X ( +right, -left ), Y ( +forward, -back ), Z ( +up, -down )
+		['len'] = 80, -- Trace source; X ( +right, -left ), Y ( +forward, -back ), Z ( +up, -down )
 		['dir'] = Vector(0,0,10), -- Trace dir/length; X ( +right, -left ), Y ( +forward, -back ), Z ( +up, -down )
-		['dmg'] = 32, --This isn't overpowered enough, I swear!!
+		['dmg'] = 40, --This isn't overpowered enough, I swear!!
 		['dmgtype'] = DMG_SLASH, --DMG_SLASH,DMG_CRUSH, etc.
 		['delay'] = 0.07, --Delay
 		['spr'] = false, --Allow attack while sprinting?
-		['snd'] = "Weapon_Crowbar.Single", -- Sound ID
+		['snd'] = "Weapon_Axe.Single", -- Sound ID
 		['snd_delay'] = 0.1,
-		["viewpunch"] = Angle(10,10,0), --viewpunch angle
+		["viewpunch"] = Angle(10,6,-6), --viewpunch angle
 		['end'] = 0.8, --time before next attack
-		['hull'] = 24, --Hullsize
+		['hull'] = 10, --Hullsize
 		['direction'] = "W", --Swing dir,
-		['hitflesh'] = "Weapon_Crowbar.Melee_HitWorld",
-		['hitworld'] = "Weapon_Crowbar.Melee_HitWorld"
+		['hitflesh'] = "weapons/crowbar/crowbar_impact2.wav",
+		['hitworld'] = "weapons/crowbar/crowbar_impact2.wav"
 	}
 }
 
 SWEP.Secondary.Attacks = {
 	{
 		['act'] = ACT_VM_MISSCENTER, -- Animation; ACT_VM_THINGY, ideally something unique per-sequence
-		['len'] = 160, -- Trace source; X ( +right, -left ), Y ( +forward, -back ), Z ( +up, -down )
-		['dir'] = Vector(0,0,10), -- Trace dir/length; X ( +right, -left ), Y ( +forward, -back ), Z ( +up, -down )
-		['dmg'] = 32, --This isn't overpowered enough, I swear!!
+		['len'] = 80, -- Trace source; X ( +right, -left ), Y ( +forward, -back ), Z ( +up, -down )
+		['dir'] = Vector(0,0,0), -- Trace dir/length; X ( +right, -left ), Y ( +forward, -back ), Z ( +up, -down )
+		['dmg'] = 75, --This isn't overpowered enough, I swear!!
 		['dmgtype'] = DMG_SLASH, --DMG_SLASH,DMG_CRUSH, etc.
 		['delay'] = 0.07, --Delay
 		['spr'] = false, --Allow attack while sprinting?
 		['snd'] = "Weapon_Crowbar_HardSwing", -- Sound ID
-		['snd_delay'] = 0.1,
+		['snd_delay'] = 0,
 		["viewpunch"] = Angle(17,17,0), --viewpunch angle
-		['end'] = 1.8, --time before next attack
+		['end'] = 1.45, --time before next attack
 		['hull'] = 24, --Hullsize
 		['direction'] = "W", --Swing dir,
-		['hitflesh'] = "Weapon_Crowbar_Hard",
-		['hitworld'] = "Weapon_Crowbar_Hard"
+		['hitflesh'] = "Weapon_Crowbar.HitWorld",
+		['hitworld'] = "Weapon_Crowbar.HitWorld"
 	}
 }
+
+SWEP.RunSightsPos = Vector(-20, -2.211, 3.015)
+SWEP.RunSightsAng = Vector(-6.332, 7.034, -70)

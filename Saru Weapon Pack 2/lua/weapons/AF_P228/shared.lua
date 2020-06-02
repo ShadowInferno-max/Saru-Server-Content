@@ -1,7 +1,7 @@
 SWEP.Primary.SpreadMultiplierMax = 3
-SWEP.Primary.SpreadIncrement = 0.4
-SWEP.Primary.SpreadRecovery = 2
-SWEP.AllowSprintAttack = true
+SWEP.Primary.SpreadIncrement = 0.650
+SWEP.Primary.SpreadRecovery = 4.50
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
@@ -32,13 +32,13 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_P228.1")		-- Script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_P228.Single")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 370			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 17		-- Size of a clip
 SWEP.Primary.DefaultClip		= 27		-- Bullets you start with
-SWEP.Primary.KickUp				= 0.7		-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
+SWEP.Primary.KickUp				= 0.6		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.1		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.1		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= false		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "pistol"
 SWEP.DrawAmmo = false
@@ -58,8 +58,8 @@ SWEP.IronSightsPos = Vector(-5.973, -4.194, 2.96)
 SWEP.IronSightsAng = Vector(-0.47, -0.069, -0.144)
 SWEP.SightsPos = Vector(-5.973, -4.194, 2.96)
 SWEP.SightsAng = Vector(-0.47, -0.069, -0.144)
-SWEP.RunSightsPos = Vector(0, 0, 0)
-SWEP.RunSightsAng = Vector(-9.469, -1.701, 0)
+SWEP.RunSightsPos = Vector(1.205, -20, -6.231)
+SWEP.RunSightsAng = Vector(70, 0, 0)
 
 SWEP.VElements = {
 	["Quad"] = { type = "Quad", bone = "v_weapon.p228_Parent", rel = "", pos = Vector(-1.558, -3.636, 1.557), angle = Angle(0, 0, 0), size = 0.07, draw_func = nil}

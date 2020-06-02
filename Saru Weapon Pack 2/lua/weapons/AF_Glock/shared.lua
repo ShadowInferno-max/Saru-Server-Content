@@ -1,7 +1,7 @@
 SWEP.Primary.SpreadMultiplierMax = 1
 SWEP.Primary.SpreadIncrement = 0
 SWEP.Primary.SpreadRecovery = 1
-SWEP.AllowSprintAttack = true
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
@@ -32,7 +32,7 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_Glock.1")		-- Script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_Glock.Single")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 200			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 7		-- Size of a clip
 SWEP.Primary.DefaultClip		= 21		-- Bullets you start with
@@ -46,7 +46,7 @@ SWEP.DrawAmmo = false
 SWEP.Secondary.IronFOV			= 55		-- How much you 'zoom' in. Less is more! 	
 
 SWEP.data 				= {}				--The starting firemode
-SWEP.data.ironsights			= 0
+SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 3		-- How many bullets to shoot per trigger pull
 SWEP.Primary.Damage		= 9.5	-- Base damage per bullet
@@ -59,8 +59,8 @@ SWEP.IronSightsPos = Vector(-5.781, -3.082, 2.68)
 SWEP.IronSightsAng = Vector(0.824, 0, 0)
 SWEP.SightsPos = Vector(-5.781, -3.082, 2.68)
 SWEP.SightsAng = Vector(0.824, 0, 0)
-SWEP.RunSightsPos = Vector(6.736, -2.495, 0)
-SWEP.RunSightsAng = Vector(-9.343, 12.324, 0)
+SWEP.RunSightsPos = Vector(1.004, -17.688, -8.04)
+SWEP.RunSightsAng = Vector(70, 0, 0)
 
 SWEP.VElements = {
 	["Quad"] = { type = "Quad", bone = "v_weapon.Glock_Parent", rel = "", pos = Vector(1.557, -2.597, 2.596), angle = Angle(-80, 80, 70), size = 0.07, draw_func = nil}

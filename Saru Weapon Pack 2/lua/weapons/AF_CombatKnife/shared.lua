@@ -59,13 +59,13 @@ SWEP.Primary.Attacks = {
 		['dmgtype'] = DMG_SLASH, --DMG_SLASH,DMG_CRUSH, etc.
 		['delay'] = 0.25, --Delay
 		['spr'] = false, --Allow attack while sprinting?
-		['snd'] = "combatknife_swing1.wav", -- Sound ID
+		['snd'] = "Weapon_Knife.Slash", -- Sound ID
 		['snd_delay'] = 0.1,
 		["viewpunch"] = Angle(20,-10,0), --viewpunch angle
 		['end'] = 1, --time before next attack
 		['hull'] = 24, --Hullsize
 		['direction'] = "W", --Swing dir,
-		['hitflesh'] = "combatknife_flesh3.wav",
-		['hitworld'] = "combatknife_flesh3.wav"
+		['hitflesh'] = "Weapon_Knife.Hit",
+		['hitworld'] = "Weapon_Knife.HitWall"
 	}
 }

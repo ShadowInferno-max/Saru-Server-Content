@@ -1,3 +1,6 @@
+SWEP.Primary.SpreadMultiplierMax = 2
+SWEP.Primary.SpreadIncrement = 0.650
+SWEP.Primary.SpreadRecovery = 4.50
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
 SWEP.Contact				= ""
@@ -27,8 +30,8 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_MAC10.1")		-- Script that calls the primary fire sound
-SWEP.Primary.RPM			= 1090			-- This is in Rounds Per Minute
+SWEP.Primary.Sound			= Sound("Weapon_MAC10.Single")		-- Script that calls the primary fire sound
+SWEP.Primary.RPM			= 860			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 30		-- Size of a clip
 SWEP.Primary.DefaultClip		= 64		-- Bullets you start with
 SWEP.Primary.KickUp				= 0.3		-- Maximum up recoil (rise)

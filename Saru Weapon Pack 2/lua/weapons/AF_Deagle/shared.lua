@@ -1,4 +1,7 @@
-SWEP.Category				= "Afterlife"
+SWEP.Primary.SpreadMultiplierMax = 6
+SWEP.Primary.SpreadIncrement = 2.30
+SWEP.Primary.SpreadRecovery = 4.50
+SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
 SWEP.Contact				= ""
 SWEP.Purpose				= ""
@@ -21,16 +24,19 @@ SWEP.ViewModelFOV			= 55
 SWEP.ViewModelFlip			= false
 SWEP.ViewModel				= "models/weapons/cstrike/c_pist_deagle.mdl"	-- Weapon view model
 SWEP.WorldModel				= "models/weapons/w_pist_deagle.mdl"	-- Weapon world model
-SWEP.Base				= "qtg_weapon_base"
+SWEP.Base				= "tfa_gun_base"
 SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_DEagle.1")		-- Script that calls the primary fire sound
-SWEP.Primary.Delay           = 0.47
+SWEP.Primary.Sound			= Sound("weapons/deagle/deagle-1.wav")		-- Script that calls the primary fire sound
+SWEP.Primary.RPM			= 200			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 7		-- Size of a clip
 SWEP.Primary.DefaultClip		= 21		-- Bullets you start with
+SWEP.Primary.KickUp				= 1.7		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= false		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "pistol"
 SWEP.DrawAmmo = false
@@ -42,22 +48,12 @@ SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
 SWEP.Primary.Damage		= 57	-- Base damage per bullet
-SWEP.Primary.Spread		= .02	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
-SWEP.Primary.Recoil			= 6
-SWEP.Primary.Cone			= 0
-SWEP.Primary.SpreadMax      = 3.5
+SWEP.Primary.Spread		= .022	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
+SWEP.Primary.IronAccuracy = .0032 -- Ironsight accuracy, should be the same for shotguns
+SWEP.SelectiveFire		= false
 
--- Enter iron sight info and bone mod info below
-SWEP.IronSightsPos = Vector(-6.361, -5.579, 1.919)
-SWEP.IronSightsAng = Vector(0.718, 0, 0)
-
-SWEP.RunningPos             = Vector(9.654, 0, 0)
-SWEP.RunningAng             = Vector(-25.355, 37.542, -30.233)
-
-SWEP.NPCRestTimesMax		= 0.01
-SWEP.NPCRestTimesMin		= 0.01
-
-SWEP.VFireEffects           = 'CS_MuzzleFlash_X'
-
-SWEP.LuaAnimAtt             = true
-SWEP.LuaAnimAttShells       = 'RifleShellEject'
+--IronSights
+SWEP.IronSightsPos = Vector(-6.361, 0, 1.879)
+SWEP.IronSightsAng = Vector(0.703, 0, 0)
+SWEP.RunSightsPos = Vector(2.009, -14.674, -11.658)
+SWEP.RunSightsAng = Vector(70, 0, 0)

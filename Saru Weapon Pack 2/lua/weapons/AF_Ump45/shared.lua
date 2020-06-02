@@ -1,7 +1,7 @@
 SWEP.Primary.SpreadMultiplierMax = 2
 SWEP.Primary.SpreadIncrement = 2
 SWEP.Primary.SpreadRecovery = 2
-SWEP.AllowSprintAttack = true
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
@@ -35,7 +35,7 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_UMP45.1")		-- Script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_UMP45.Single")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 545			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 30		-- Size of a clip
 SWEP.Primary.DefaultClip		= 90		-- Bullets you start with
@@ -61,10 +61,8 @@ SWEP.SelectiveFire		= true
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-8.754, -5.351, 4.219)
 SWEP.IronSightsAng = Vector(-1.331, -0.28, -2.112)
-SWEP.SightsPos = Vector(-8.754, -5.351, 4.219)
-SWEP.SightsAng = Vector(-1.331, -0.28, -2.112)
-SWEP.RunSightsPos = Vector(8.135, -7.776, 0)
-SWEP.RunSightsAng = Vector(-5.575, 39.759, 0)
+SWEP.RunSightsPos = Vector(10.451, -18.894, -2.814)
+SWEP.RunSightsAng = Vector(0, 70, 0)
 
 SWEP.VElements = {
 	["Quad"] = { type = "Quad", bone = "v_weapon.ump45_Parent", rel = "", pos = Vector(-2.597, -7.792, -3.636), angle = Angle(0, 0, 0), size = 0.07, draw_func = nil}

@@ -1,6 +1,6 @@
-SWEP.Primary.SpreadMultiplierMax = 1
-SWEP.Primary.SpreadIncrement = 0
-SWEP.Primary.SpreadRecovery = 1
+SWEP.Primary.SpreadMultiplierMax = 8
+SWEP.Primary.SpreadIncrement = 0.20
+SWEP.Primary.SpreadRecovery = 2
 SWEP.AllowSprintAttack = true
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 1"
@@ -32,13 +32,13 @@ SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 
-SWEP.Primary.Sound			= Sound("Weapon_AUG.1")		-- script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_AUG.Single")		-- script that calls the primary fire sound
 SWEP.Primary.RPM				= 631		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 40		-- Size of a clip
 SWEP.Primary.DefaultClip		= 120	-- Bullets you start with
-SWEP.Primary.KickUp			    = 4.75				-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 0.0		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal		= 0.		-- Maximum up recoil (stock)
+SWEP.Primary.KickUp			    = 0.55				-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= true		-- Automatic/Semi Auto
 SWEP.Primary.Ammo			= "ar2"
 
@@ -55,7 +55,7 @@ SWEP.data.ironsights			= 1
 SWEP.ScopeScale 			= 0.7
 
 SWEP.Primary.NumShots	= 1		--how many bullets to shoot per trigger pull
-SWEP.Primary.Damage		= 23	--base damage per bullet
+SWEP.Primary.Damage		= 26	--base damage per bullet
 SWEP.Primary.Spread		= .02	--define from-the-hip accuracy 1 is terrible, .0001 is exact)
 SWEP.Primary.IronAccuracy = .01 -- ironsight accuracy, should be the same for shotguns
 

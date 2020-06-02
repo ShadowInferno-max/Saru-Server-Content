@@ -26,13 +26,13 @@ SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 
-SWEP.Primary.Sound			= Sound("Weapon_XM1014.1")		-- script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_XM1014.Single")		-- script that calls the primary fire sound
 SWEP.Primary.RPM				= 200		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 8			-- Size of a clip
 SWEP.Primary.DefaultClip			= 30	-- Default number of bullets in a clip
-SWEP.Primary.KickUp			= 1				-- Maximum up recoil (rise)
+SWEP.Primary.KickUp			    = 2			-- Maximum up recoil (rise)
 SWEP.Primary.KickDown			= 0.8		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal			= 0.6	-- Maximum up recoil (stock)
+SWEP.Primary.KickHorizontal		= 0.6	-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= false		-- Automatic/Semi Auto
 SWEP.Primary.Ammo			= "buckshot"
 
@@ -62,8 +62,8 @@ function SWEP:Think()
 		
 		if CLIENT then
 			self.VElements["Quad"].draw_func = function( weapon )
-			    draw.SimpleText(self.Weapon:Ammo1(), "TargetId", 10, 2, Color(255,255,255,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
-			    draw.SimpleText(self.Weapon:Clip1(), "TargetId", 10, -10, Color(20,20,70,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
+			    draw.SimpleText(self.Weapon:Ammo1(), "TargetId", 10, -5, Color(255,255,255,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
+			    draw.SimpleText(self.Weapon:Clip1(), "TargetId", 10, -15, Color(20,20,70,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
 			end
 		end
 	end

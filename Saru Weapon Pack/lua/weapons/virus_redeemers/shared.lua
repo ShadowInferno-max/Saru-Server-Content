@@ -32,13 +32,13 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_ELITE.1")		-- Script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_ELITE.Single")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 400			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 30		-- Size of a clip
 SWEP.Primary.DefaultClip		= 90		-- Bullets you start with
-SWEP.Primary.KickUp				= 0.45		-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 0.0		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal		= 0.		-- Maximum up recoil (stock)
+SWEP.Primary.KickUp				= 0.55		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= true		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "pistol"
 

@@ -1,3 +1,6 @@
+SWEP.Primary.SpreadMultiplierMax = 8
+SWEP.Primary.SpreadIncrement = 0.650
+SWEP.Primary.SpreadRecovery = 5.50
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
 SWEP.Contact				= ""
@@ -15,7 +18,7 @@ SWEP.DrawCrosshair			= true		-- Set false if you want no crosshair from hip
 SWEP.Weight				= 50			-- Rank relative ot other weapons. bigger is better
 SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
-SWEP.HoldType 				= "rpg"
+SWEP.HoldType 				= "smg"
 
 SWEP.ViewModelFOV			= 55
 SWEP.ViewModelFlip			= false
@@ -26,7 +29,7 @@ SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 
-SWEP.Primary.Sound			= Sound("Weapon_P90.1")		-- script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_P90.Single")		-- script that calls the primary fire sound
 SWEP.Primary.RPM				= 714		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 50		-- Size of a clip
 SWEP.Primary.DefaultClip			= 150	-- Bullets you start with

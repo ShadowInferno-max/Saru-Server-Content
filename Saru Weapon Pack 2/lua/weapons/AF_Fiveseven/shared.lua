@@ -1,3 +1,6 @@
+SWEP.Primary.SpreadMultiplierMax = 4
+SWEP.Primary.SpreadIncrement = 0.480
+SWEP.Primary.SpreadRecovery = 4.50
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
 SWEP.Contact				= ""
@@ -27,7 +30,7 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_FiveSeven.1")		-- Script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_FiveSeven.Single")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 500			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 20		-- Size of a clip
 SWEP.Primary.DefaultClip		= 60		-- Bullets you start with
@@ -51,10 +54,8 @@ SWEP.Primary.IronAccuracy = .015 -- Ironsight accuracy, should be the same for s
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-5.961, -3.412, 3.039)
 SWEP.IronSightsAng = Vector(-0.353, 0, 0)
-SWEP.SightsPos = Vector(-5.961, -3.412, 3.039)
-SWEP.SightsAng = Vector(-0.353, 0, 0)
-SWEP.RunSightsPos = Vector(0, 0, 0)
-SWEP.RunSightsAng = Vector(-9.469, -1.701, 0)
+SWEP.RunSightsPos = Vector(0.804, -15.478, -9.849)
+SWEP.RunSightsAng = Vector(70, 0, 0)
 
 SWEP.VElements = {
 	["Quad"] = { type = "Quad", bone = "v_weapon.FIVESEVEN_PARENT", rel = "", pos = Vector(-1.558, -2.597, -3.636), angle = Angle(0, 0, 0), size = 0.07, draw_func = nil}

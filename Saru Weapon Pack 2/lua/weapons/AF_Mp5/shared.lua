@@ -1,3 +1,6 @@
+SWEP.Primary.SpreadMultiplierMax = 4
+SWEP.Primary.SpreadIncrement = 0.350
+SWEP.Primary.SpreadRecovery = 4.50
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
 SWEP.Contact				= ""
@@ -27,13 +30,13 @@ SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 SWEP.FiresUnderwater = false
 
-SWEP.Primary.Sound			= Sound("Weapon_MP5Navy.1")		-- Script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_MP5Navy.Single")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 800			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 30		-- Size of a clip
 SWEP.Primary.DefaultClip		= 60		-- Bullets you start with
-SWEP.Primary.KickUp				= 0.3		-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
+SWEP.Primary.KickUp				= 0.43		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.2		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.2		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= true		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "smg1"
 SWEP.DrawAmmo = false
@@ -45,7 +48,7 @@ SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
 SWEP.Primary.Damage		= 25	-- Base damage per bullet
-SWEP.Primary.Spread		= .025	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
+SWEP.Primary.Spread		= .022	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
 SWEP.Primary.IronAccuracy = .015 -- Ironsight accuracy, should be the same for shotguns
 
 SWEP.SelectiveFire		= true

@@ -51,8 +51,9 @@ SWEP.VElements = {
 	["bolt+"] = { type = "Model", model = "models/props_borealis/bluebarrel001.mdl", bone = "ValveBiped.base", rel = "bolt part", pos = Vector(-0.838, -0.48, 1.524), angle = Angle(90, 0, 0), size = Vector(0.014, 0.014, 0.019), color = Color(123, 123, 123, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
 	["bolt part"] = { type = "Model", model = "models/hunter/blocks/cube025x025x025.mdl", bone = "ValveBiped.base", rel = "body", pos = Vector(0, -0.805, -0.415), angle = Angle(0, 0, 0), size = Vector(0.145, 0.072, 0.43), color = Color(123, 123, 123, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
 	["ironsight back+++"] = { type = "Model", model = "models/hunter/tubes/tube1x1x1.mdl", bone = "ValveBiped.base", rel = "bolt part", pos = Vector(0, -1.037, -2.027), angle = Angle(0, 0, 0), size = Vector(0.009, 0.009, 0.009), color = Color(123, 123, 123, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
-	["ironsight back"] = { type = "Model", model = "models/props_c17/oildrum001.mdl", bone = "ValveBiped.base", rel = "bolt part", pos = Vector(0.596, -0.32, -1.622), angle = Angle(90, 0, 0), size = Vector(0.037, 0.037, 0.028), color = Color(123, 123, 123, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
+	["ironsight back"] = { type = "Model", model = "models/props_c17/oildrum001.mdl", bone = "ValveBiped.base", rel = "bolt part", pos = Vector(0.596, -0.32, -1.622), angle = Angle(90, 0, 0), size = Vector(0.037, 0.037, 0.028), color = Color(123, 123, 123, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} }
 }
+
 SWEP.WElements = {
 	["ironsight front"] = { type = "Model", model = "models/hunter/tubes/tube1x1x1d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "barrel cover thing", pos = Vector(0.885, -1.362, 0), angle = Angle(0, -52.314, 0), size = Vector(0.032, 0.032, 0.009), color = Color(185, 185, 185, 255), surpresslightning = false, material = "silly/sillymaterialfix", skin = 0, bodygroup = {} },
 	["bolt part"] = { type = "Model", model = "models/hunter/blocks/cube025x025x025.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "body", pos = Vector(0, -0.805, -0.415), angle = Angle(0, 0, 0), size = Vector(0.145, 0.072, 0.43), color = Color(123, 123, 123, 255), surpresslightning = false, material = "phoenix_storms/grey_chrome", skin = 0, bodygroup = {} },
@@ -101,7 +102,7 @@ SWEP.DrawCrosshair = true
 
 SWEP.DrawAmmo = true
 
-SWEP.ReloadSound = "weapons/draw_pda_spy.wav"
+SWEP.ReloadSound = "a"
 
 SWEP.Base = "tfa_gun_base"
 

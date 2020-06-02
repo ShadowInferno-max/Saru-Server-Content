@@ -1,7 +1,7 @@
 SWEP.Primary.SpreadMultiplierMax = 4
-SWEP.Primary.SpreadIncrement = 4
-SWEP.Primary.SpreadRecovery = 2
-SWEP.AllowSprintAttack = true
+SWEP.Primary.SpreadIncrement = 0.650
+SWEP.Primary.SpreadRecovery = 4.50
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
@@ -22,7 +22,7 @@ SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.HoldType 				= "pistol"		-- how others view you carrying the weapon
 
-SWEP.ViewModelFOV			= 70
+SWEP.ViewModelFOV			= 60
 SWEP.ViewModelFlip			= false
 SWEP.ViewModel				= "models/weapons/cstrike/c_pist_glock18.mdl"	-- Weapon view model
 SWEP.WorldModel				= "models/weapons/w_pistol.mdl"	-- Weapon world model
@@ -48,13 +48,17 @@ SWEP.data 				= {}				--The starting firemode
 SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 2	-- How many bullets to shoot per trigger pull
-SWEP.Primary.Damage		= 17.2	-- Base damage per bullet
+SWEP.Primary.Damage		= 13.2	-- Base damage per bullet
 SWEP.Primary.Spread		= .025	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
 SWEP.Primary.IronAccuracy = .015 -- Ironsight accuracy, should be the same for shotguns
 
 -- Enter iron sight info and bone mod info below
-SWEP.IronSightsPos = Vector(-8.2, 0, 4.88)
-SWEP.IronSightsAng = Vector(0, 0, 0)
+SWEP.IronSightsPos = Vector(-5.591, 0, 2.2)
+SWEP.IronSightsAng = Vector(0, 1.406, 0)
+SWEP.RunSightsPos = Vector(2.21, -17.286, -16.08)
+SWEP.RunSightsAng = Vector(70, 0, 0)
+
+
 
 SWEP.DisableIdleAnimations = false
 
@@ -65,11 +69,3 @@ SWEP.ViewModelBoneMods = {
 SWEP.VElements = {
 	["Pistol"] = { type = "Model", model = "models/weapons/c_pistol.mdl", bone = "v_weapon.Glock_Parent", rel = "", pos = Vector(29.61, 2, 7.199), angle = Angle(0, 162.468, 80.649), size = Vector(1.144, 1.144, 1.144), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
-
---SWEP.VElements = {
---	["Pistol"] = { type = "Model", model = "models/weapons/c_pistol.mdl", bone = "v_weapon.Glock_Parent", rel = "", pos = Vector(29.61, 2, 7.199), angle = Angle(0, 162.468, 80.649), size = Vector(1.144, 1.144, 1.144), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
---}
-
---SWEP.ViewModelBoneMods = {
---	["v_weapon.Glock_Parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
---}

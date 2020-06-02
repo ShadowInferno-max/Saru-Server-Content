@@ -91,7 +91,7 @@ SWEP.BlockAnimation = {
 	},
 	--when you get hit and block it
 	["out"] = {
-		["type"] = ACT_HL2MP_IDLE_CAMERAT, --Sequence or act
+		["type"] = ACT_HL2MP_IDLE_CAMERA, --Sequence or act
 		["value"] = 1673, --Number for act, String/Number for sequence
 		["transition"] = true
 	}

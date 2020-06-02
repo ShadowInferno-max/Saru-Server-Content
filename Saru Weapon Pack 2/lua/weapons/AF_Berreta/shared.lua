@@ -1,3 +1,6 @@
+SWEP.Primary.SpreadMultiplierMax = 8
+SWEP.Primary.SpreadIncrement = 0.650
+SWEP.Primary.SpreadRecovery = 3.40
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
 SWEP.Contact				= ""
@@ -30,13 +33,13 @@ SWEP.ShowWorldModel         = false
 SWEP.ShowViewModel          = true
 
 
-SWEP.Primary.Sound			= Sound("Weapon_ELITE.1")		-- Script that calls the primary fire sound
-SWEP.Primary.RPM			= 225			-- This is in Rounds Per Minute
+SWEP.Primary.Sound			= Sound("Weapon_ELITE.Single")		-- Script that calls the primary fire sound
+SWEP.Primary.RPM			= 625			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 15		-- Size of a clip
 SWEP.Primary.DefaultClip		= 45		-- Bullets you start with
-SWEP.Primary.KickUp				= 0.7		-- Maximum up recoil (rise)
-SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
-SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
+SWEP.Primary.KickUp				= 0.6		-- Maximum up recoil (rise)
+SWEP.Primary.KickDown			= 0.2		-- Maximum down recoil (skeet)
+SWEP.Primary.KickHorizontal		= 0.2		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= false		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "pistol"
 SWEP.DrawAmmo = false
@@ -47,13 +50,15 @@ SWEP.data 				= {}				--The starting firemode
 SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
-SWEP.Primary.Damage		= 38.4	-- Base damage per bullet
+SWEP.Primary.Damage		= 21.4	-- Base damage per bullet
 SWEP.Primary.Spread		= .017	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
 SWEP.Primary.IronAccuracy = .012 -- Ironsight accuracy, should be the same for shotguns
 
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-6.481, 0, 2.599)
 SWEP.IronSightsAng = Vector(0, 0, 0)
+SWEP.RunSightsPos = Vector(5.025, -4.02, -5.428)
+SWEP.RunSightsAng = Vector(-7.035, 30.25, -26.031)
 
 SWEP.DisableIdleAnimations = false
 

@@ -43,7 +43,7 @@ sound.Add(
 	sound = "weapons/famas/famas-1.wav"
 })
 
-SWEP.Primary.Sound			= Sound("Weapon_Famas2.Single")		-- Script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_Famas.Single")		-- Script that calls the primary fire sound
 SWEP.Primary.RPM			= 380			-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 22		-- Size of a clip
 SWEP.Primary.DefaultClip		= 66		-- Bullets you start with

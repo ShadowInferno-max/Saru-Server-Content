@@ -1,7 +1,7 @@
 SWEP.Primary.SpreadMultiplierMax = 1
 SWEP.Primary.SpreadIncrement = 0
 SWEP.Primary.SpreadRecovery = 1
-SWEP.AllowSprintAttack = true
+SWEP.AllowSprintAttack = false
 SWEP.DisableChambering = true
 SWEP.Category				= "TFA Saru weapons 2"
 SWEP.Author				= ""
@@ -23,6 +23,16 @@ SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.XHair					= false		-- Used for returning crosshair after scope. Must be the same as DrawCrosshair
 SWEP.HoldType 				= "rpg"
 
+sound.Add(
+{
+	name = "Weapon_Stubber.Single",
+	channel = CHAN_WEAPON,
+	volume = 1.0,
+	soundlevel = 100,
+	pitch = {79},
+	sound = "weapons/scout/scout_fire-1.wav"
+})
+
 SWEP.ViewModelFOV			= 55
 SWEP.ViewModelFlip			= false
 SWEP.ViewModel				= "models/weapons/cstrike/c_snip_scout.mdl"	-- Weapon view model
@@ -32,7 +42,7 @@ SWEP.Spawnable				= true
 SWEP.UseHands = true
 SWEP.AdminSpawnable			= true
 
-SWEP.Primary.Sound			= Sound("Weapon_Scout.1")		-- script that calls the primary fire sound
+SWEP.Primary.Sound			= Sound("Weapon_Stubber.Single")		-- script that calls the primary fire sound
 SWEP.Primary.RPM				= 48		-- This is in Rounds Per Minute
 SWEP.Primary.ClipSize			= 5		-- Size of a clip
 SWEP.Primary.DefaultClip			= 15	-- Bullets you start with
@@ -55,16 +65,32 @@ SWEP.data.ironsights			= 1
 SWEP.ScopeScale 			= 0.7
 
 SWEP.Primary.NumShots	= 1		--how many bullets to shoot per trigger pull
-SWEP.Primary.Damage		= 55	--base damage per bullet
+SWEP.Primary.Damage		= 75	--base damage per bullet
 SWEP.Primary.Spread		= .01	--define from-the-hip accuracy 1 is terrible, .0001 is exact)
 SWEP.Primary.IronAccuracy = .0001 -- ironsight accuracy, should be the same for shotguns
 SWEP.BoltAction	=	true
 
+SWEP.VElements = {
+	["Quad"] = { type = "Quad", bone = "v_weapon.scout_Parent", rel = "", pos = Vector(0, -7.301, -5.715), angle = Angle(0, 0, 0), size = 0.07, draw_func = nil}
+}
+
+function SWEP:Think()
+
+	if self.Owner:IsValid() then
+		
+		if CLIENT then
+			self.VElements["Quad"].draw_func = function( weapon )
+			    draw.SimpleText(self.Weapon:Ammo1(), "TargetID", 0, 12, Color(255,255,255,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
+			    draw.SimpleText(self.Weapon:Clip1(), "TargetID", 0, 0, Color(20,70,20,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
+			end
+		end
+	end
+
+end
+
 -- enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-6.72, -3.826, 3)
 SWEP.IronSightsAng = Vector(0.809, -0.25, -1.542)
-SWEP.SightsPos = Vector(-6.72, -3.826, 3)
-SWEP.SightsAng = Vector(0.809, -0.25, -1.542)
 SWEP.RunSightsPos = Vector(9.027, -15.131, 0)
 SWEP.RunSightsAng = Vector(-2.777, 70, 0)
 
